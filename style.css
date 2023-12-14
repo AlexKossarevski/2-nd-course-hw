@@ -14,7 +14,7 @@
   
   .top__game_pc {
     height: 1024px;
-    background-image: url(img/background_1.jpg);
+    background-image: url(img/background__header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,7 +63,7 @@
   }
   
   .product__pc {
-    background-image: url(img/background_2.jpg);
+    background-image: url(img/background__body_1.jpg);
     background-size: cover;
     display: flex;
     padding: 32px;
@@ -88,7 +88,7 @@
     box-sizing: border-box;
   }
   .game__pc_1 {
-    background-image: url(img/background_game_1.jpg);
+    background-image: url(img/background__game_1.jpg);
     color: #FFFFFF;
     display: flex;
     width: 379px;
@@ -101,7 +101,7 @@
     border: 1px solid #44D2FF;
   }
   .game__pc_2 {
-    background-image: url(img/background_game_2.jpg);
+    background-image: url(img/background__game_2.jpg);
     color: #FFFFFF;
     display: flex;
     width: 378px;
@@ -114,7 +114,7 @@
     border: 1px solid #44D2FF;
   }
   .game__pc_3 {
-    background-image: url(img/background_game_3.jpg);
+    background-image: url(img/background__game_3.jpg);
     color: #FFFFFF;
     display: flex;
     width: 379px;
