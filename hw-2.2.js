@@ -42,3 +42,23 @@
 //Задание 8
 //let age = "Сколько вам лет?";
 //prompt(age)
+
+//Задание 9 **************************
+//  const user = {
+//      name:'Alex',
+//      age:40,
+//      isAdmin:true,
+//      cityofresidence:'Astana',
+//      age:42,
+//      delete:cityofresidence,
+//  }
+//  console.log (user);
+
+//Задание 9.4
+//  let info = "Какую информацию хотите узнать о пользователе?";
+//  prompt(info);
+
+//Задание 10
+//  let yName = prompt('Как тебя зовут?');
+//  let result = yName;
+//  alert(`Привет, ${result}!`);
