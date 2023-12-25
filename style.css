@@ -126,3 +126,44 @@
     transform: scale(1.05);
     border: 1px solid #44D2FF;
   }
+
+  @media (max-width: 767px) {
+    .center {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .top__game_pc {
+      height: 735px;
+      background-image: url(img/background_mob.jpg);
+    }
+    .heading_pc {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .header__game_pc {
+      font-weight: 700;
+      line-height: 39px;
+      font-size: 32px;
+      text-align: center;
+      padding-top: 239px;
+    }
+    .text__game_pc {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      padding-top: 33px;
+      padding-bottom: 33px;
+      width: 343px;
+    }
+    .game__pc_1 {
+      width: 343px;
+    }
+    .game__pc_2 {
+      width: 343px;
+    }
+    .game__pc_3 {
+      width: 343px;
+    }
+  }
+}
