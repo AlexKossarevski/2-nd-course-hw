@@ -146,3 +146,21 @@
 // }
 
 // alert(data(gameSeasons));
+
+
+
+// let num = Number(prompt('Введи число от 1 до 12!'));
+// function seasons(num) {
+//     if (num <= 0 || num >= 13) {
+//         alert('Вы ввели неправильное число');
+//     } else if (num === 1 || num === 2 || num === 12) {
+//         alert('Зима');
+//     } else if (num === 3 || num === 4 || num === 5) {
+//         alert('Весна');
+//     } else if (num === 6 || num === 7 || num === 8) {
+//         alert('Лето');
+//     } else {
+//         alert('Осень')
+//     }
+// }
+// seasons(num);
