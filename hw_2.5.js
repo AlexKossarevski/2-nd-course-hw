@@ -16,60 +16,44 @@
 
 // ********************************* Задание_2 ********************************************
 // let number = prompt("Введите число");
-
 // let printMessage;
 
-// if (number%2===0) {
-
-//     printMessage = function () {
-//         console.log("Число четное");
+// printMessage = function (number) {
+//     if (number % 2 === 0) {
+//         return ("Число четное");
+//     } else {
+//         return ("Число нечетное");
 //     }
-
-// } else {
-
-//     printMessage = function () {
-//         console.log("Число нечетное");
-//     }
-
 // }
-
-// printMessage();
+// alert(printMessage(number));
 // ********************************* Задание_3 ********************************************
-// const degree = () => {
-//     num = Number(prompt("Введите число."));
-//     let result = num ** 2;
-//     console.log(result);
+// function squared(inputNumber) {
+//     console.log(inputNumber ** 2);
 // }
-// degree();
 
-// function degree() {
-//     let num = Number(prompt("Введите число."));
-//     console.log(num ** 2);
-//     return;
+// squared(prompt('Введи число.'));
+// ------------------------------------------------------
+// function returnSquared(inputNumber) {
+//     return inputNumber ** 2;
 // }
-// degree();
 
+// let result = returnSquared(prompt('Введи число.'));
+
+// console.log(result);
 // ********************************* Задание_4 ********************************************
-// let age = prompt("Введите возраст");
-// let answer;
-
-// if (age > 12) {
-//     answer = function () {
-//         alert("Добро пожаловать");
-//     }
-
-// } else if (age < 0) {
-//     answer = function () {
-//         alert("Вы ввели неправильное значение");
-//     }
-
-// } else {
-//     answer = function () {
-//         alert("Привет,друг!");
+// function sayHello() {
+//     const age = prompt(`Сколько Вам лет?`);
+//     if (age < 0) {
+//         console.log(`Вы ввели неправильное значение`);
+//         return
+//     } if (age <= 12) {
+//         console.log(`Привет друг!`);
+//     } else {
+//         console.log(`Добро пожаловать!`);
 //     }
 // }
 
-// answer();
+// sayHello();
 // ********************************* Задание_5 ********************************************
 // let a = prompt(`Введите первое число`);
 // let b = prompt(`Введите второе число`);
@@ -98,35 +82,25 @@
 
 // request();
 // ********************************* Задание_7 ********************************************
-// const cicle1 = {
-//     radius: 2,
-//     getArea() {
-//         let mathRadius = 3.1415926536 * cicle1.radius;
-//         return mathRadius;
-//     },
-//     getPerimeter() {
-//         let mathPerimeter = 2 * cicle1.radius * 3.1415926536;
-//         return mathPerimeter;
-//     }
+// let circle1 = { radius: 2, getArea, getPerimeter }; 
+// let circle2 = { radius: 4, getArea, getPerimeter };
+
+// function getArea() {
+//   return Math.PI * this.radius ** 2
 // }
 
-// const cicle2 = {
-//     radius: 4,
-//     getArea() {
-//         let mathRadius = 3.1415926536 * cicle2.radius;
-//         return mathRadius;
-//     },
-//     getPerimeter() {
-//         let mathPerimeter = 2 * cicle2.radius * 3.1415926536;
-//         return mathPerimeter;
-//     }
+// function getPerimeter() {
+//   return 2 * Math.PI * this.radius
 // }
 
-// console.log(cicle1.getArea());
-// console.log(cicle1.getPerimeter());
+// console.log(circle1.getArea());
 
-// console.log(cicle2.getArea());
-// console.log(cicle2.getPerimeter());
+// console.log(circle1.getPerimeter());
+
+
+// console.log(circle2.getArea());
+
+// console.log(circle2.getPerimeter());
 // ********************************* Задание_8 ********************************************
 
 // let gameSeasons = Number(prompt("Введите месяц"));
