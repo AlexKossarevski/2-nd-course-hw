@@ -31,11 +31,11 @@
 // console.log(minValue);
 // console.log(maxValue);
 //--------------------------------------- ЗАДАНИЕ 5 ------------------------------------------------------
-// function getRandomInt(minValue, maxValue) {
-//     return Math.round(Math.random() * (maxValue
-//         - minValue)) + minValue;
+// function getRandom(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
 // }
-// console.log(getRandomInt(1, 10));
+
+// console.log(getRandom(1, 10));
 //--------------------------------------- ЗАДАНИЕ 6 ------------------------------------------------------
 
 
@@ -43,9 +43,24 @@
 
 
 //--------------------------------------- ЗАДАНИЕ 7 ------------------------------------------------------
+// function getRandomInt(minValue, maxValue) {
+//     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
+// }
+// console.log(getRandomInt(14, 33));
 //--------------------------------------- ЗАДАНИЕ 8 ------------------------------------------------------
+// const currentDate = new Date();
+
+// console.log(currentDate);
 //--------------------------------------- ЗАДАНИЕ 9 ------------------------------------------------------
+
+
+
 //--------------------------------------- ЗАДАНИЕ 10 ------------------------------------------------------
+
+
+
+
+
 //--------------------------------------- ЗАДАНИЕ 11 ------------------------------------------------------
 
 
@@ -53,6 +68,18 @@
 
 
 // *******************************************************************************
+// const currentDate = new Date();
+// currentDate.toLocaleDateString('ru-RU', { weekday: 'long' });
+
+// console.log(currentDate);
+// -------------------------------------------------------------
+// function getRandomFloat(min, max) {
+//     return Math.random() * (max - min) + min;
+// }
+// getRandomFloat(11, 101)
+
+//--------------------------------------------------------------------
+
 // let number = 32.58884;
 
 // number = number.toFixed(2);
