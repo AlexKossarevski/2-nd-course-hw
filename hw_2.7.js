@@ -6,6 +6,7 @@
 // console.log(str);
 //--------------------------------------- ЗАДАНИЕ 2 ------------------------------------------------------
 // function searchStart(arr, str) {
+
 //     return arr.filter(el => el.toLowerCase().startsWith(str));
 // }
 
@@ -32,16 +33,16 @@
 // console.log(maxValue);
 //--------------------------------------- ЗАДАНИЕ 5 ------------------------------------------------------
 // function getRandom(min, max) {
+
 //     return Math.floor(Math.random() * (max - min + 1)) + min;
+
 // }
 
 // console.log(getRandom(1, 10));
 //--------------------------------------- ЗАДАНИЕ 6 ------------------------------------------------------
 // function getRandomArrNumbers(n) {
 
-//     let i = n / 2;
-
-//     i = Math.floor(i);
+//     let i = Math.floor(n / 2)
 
 //     for (let index = 0; index < i; index++) {
 
@@ -54,22 +55,30 @@
 // getRandomArrNumbers(9);
 //--------------------------------------- ЗАДАНИЕ 7 ------------------------------------------------------
 // function getRandomInt(minValue, maxValue) {
+
 //     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
 // }
+
 // console.log(getRandomInt(14, 33));
 //--------------------------------------- ЗАДАНИЕ 8 ------------------------------------------------------
 // const currentDate = new Date();
 
 // console.log(currentDate);
 //--------------------------------------- ЗАДАНИЕ 9 ------------------------------------------------------
+// const currentDate = new Date(); // 73 
 
+// let newDate = currentDate;
 
+// newDate.setDate(newDate.getDate() + 73);
 
+// console.log(newDate);
 //--------------------------------------- ЗАДАНИЕ 10 ------------------------------------------------------
+const currentDate = new Date();
+
+let newDate = currentDate;
 
 
-
-
+console.log(newDate);
 
 //--------------------------------------- ЗАДАНИЕ 11 ------------------------------------------------------
 // function game2() {
