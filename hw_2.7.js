@@ -37,11 +37,21 @@
 
 // console.log(getRandom(1, 10));
 //--------------------------------------- ЗАДАНИЕ 6 ------------------------------------------------------
+// function getRandomArrNumbers(n) {
 
+//     let i = n / 2;
 
+//     i = Math.floor(i);
 
+//     for (let index = 0; index < i; index++) {
 
+//         console.log((Math.round(Math.random() * n)));
 
+//     }
+
+// }
+
+// getRandomArrNumbers(9);
 //--------------------------------------- ЗАДАНИЕ 7 ------------------------------------------------------
 // function getRandomInt(minValue, maxValue) {
 //     return Math.round(Math.random() * (maxValue - minValue)) + minValue;
