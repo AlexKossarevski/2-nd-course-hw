@@ -73,12 +73,14 @@
 
 // console.log(newDate);
 //--------------------------------------- ЗАДАНИЕ 10 ------------------------------------------------------
-const currentDate = new Date();
 
-let newDate = currentDate;
+// const currentDate = new Date();
 
+// const options = { year: 'numeric', weekday: 'long', month: 'long', day: 'numeric' };
 
-console.log(newDate);
+// console.log(currentDate.toLocaleDateString('ru-RU', options).split(',').reverse().join('-это день '));
+// console.log(currentDate.toLocaleTimeString('ru-RU'));
+
 
 //--------------------------------------- ЗАДАНИЕ 11 ------------------------------------------------------
 // function game2() {
@@ -163,3 +165,46 @@ console.log(newDate);
 // const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 // currentDate.toLocaleDateString('ru-RU', options);
+// ---------------------------- 2/6 ----------------------- разбор
+
+// const arr = [];
+// for (i = 0; i < 3; i++) {
+//     const nestArr = [];
+
+//     for (k = 0; k < 3; k++) {
+//         nestArr.push(1);
+//     }
+
+//     arr.push(nestArr);
+// }
+// console.log(arr);
+// ---------------------------------------------
+// const arr = [9, 8, 7, 'a', 6, 5];
+// arr.sort((a, b) => a - b).pop();
+// console.log(arr);
+// --------------------------------------
+// function getSquare(arr) {
+// 	const result = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		result.push(arr[i] ** 2);
+// 	}
+// 	return result;
+// }
+
+// console.log(getSquare([9, 14, 21]));
+// ------------------------------------
+// function filterPositive(array) {
+// 	const result = [];
+// 	result.push(array.filter(num => num < 0));
+// 	console.log(result);
+// }
+
+// filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
+// filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
+// ----------------------------------------------------
+// function filterPositive(array) {
+// 	return array.filter(num => num < 0);
+// }
+
+// console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+// console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
