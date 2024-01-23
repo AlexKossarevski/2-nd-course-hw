@@ -62,24 +62,24 @@
 
 
 //--------------------------------------- ЗАДАНИЕ 11 ------------------------------------------------------
-function game2() {
-    let text = "Запомни очередность слов:"
-    let words = ['Яблоко', 'Груша', 'Дыня', 'Вноград', 'Персик', 'Апелсин', 'Мандарин',];
-    words = words.sort(() => Math.random() - 0.5);
-    alert(text + `${words}`);
-    let userAnswer1 = String(prompt(`Как назывался первый фрукт?`));
-    let userAnswer2 = String(prompt(`Как назывался последний фрукт?`));
-    function userAnswer(userAnswer1, userAnswer2) {
-        if (userAnswer1 === words[0] && userAnswer2 === words[6]) {
-            alert('Правильно, оба элемента!');
-        } else if (userAnswer1 === words[0] || userAnswer2 === words[6]) {
-            alert('Почти угадали!');
-        } else {
-            alert('Ответ не верный');
-        }
-    }
-    userAnswer(userAnswer1, userAnswer2);
-}
+// function game2() {
+//     let text = "Запомни очередность слов:"
+//     let words = ['Яблоко', 'Груша', 'Дыня', 'Вноград', 'Персик', 'Апелсин', 'Мандарин',];
+//     words = words.sort(() => Math.random() - 0.5);
+//     alert(text + `${words}`);
+//     let userAnswer1 = String(prompt(`Как назывался первый фрукт?`));
+//     let userAnswer2 = String(prompt(`Как назывался последний фрукт?`));
+//     function userAnswer(userAnswer1, userAnswer2) {
+//         if (userAnswer1 === words[0] && userAnswer2 === words[6]) {
+//             alert('Правильно, оба элемента!');
+//         } else if (userAnswer1 === words[0] || userAnswer2 === words[6]) {
+//             alert('Почти угадали!');
+//         } else {
+//             alert('Ответ не верный');
+//         }
+//     }
+//     userAnswer(userAnswer1, userAnswer2);
+// }
 
 
 // *******************************************************************************
