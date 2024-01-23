@@ -160,6 +160,39 @@ body {
   color: #FFFFFF;
 }
 
+.speech__game {
+  height: 800px;
+  background-image: url(img/background_4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.speech__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 588px;
+}
+
+.speech__header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.speech__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF; 
+}
+
 
 @media (max-width: 767px) {
   .center {
@@ -224,4 +257,35 @@ body {
     width: 344px;
     height: 236px;
   }
+
+  .speech__game {
+    height: 654px;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  
+  .speech__info {
+    align-items: center;
+    width: 343px;
+    padding-top: 51px; 
+  }
+  
+  .speech__header {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  
+  .speech__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center; 
+  }
+
+  .logo__speech {
+    width: 344px;
+    height: 231px;
+    padding-bottom: 91px;
+  }
+  
 }
