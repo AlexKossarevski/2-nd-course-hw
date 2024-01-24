@@ -1,9 +1,7 @@
 //--------------------------------------- ЗАДАНИЕ 1 ------------------------------------------------------
 // let str = 'js';
 
-// str = str.toUpperCase();
-
-// console.log(str);
+// console.log(str.toUpperCase());
 //--------------------------------------- ЗАДАНИЕ 2 ------------------------------------------------------
 // function searchStart(arr, str) {
 
@@ -11,8 +9,7 @@
 // }
 
 // console.log(searchStart([`Кошка`, `Кит`, `Комар`, `Носорог`], `КО`));
-
-
+// console.log(searchStart([`Кошка`, `Кит`, `Комар`, `Носорог`], `ко`));
 //--------------------------------------- ЗАДАНИЕ 3 ------------------------------------------------------
 
 // let number = 32.58884;
@@ -43,15 +40,13 @@
 // console.log(getRandom(1, 10));
 //--------------------------------------- ЗАДАНИЕ 6 ------------------------------------------------------
 // function getRandomArrNumbers(n) {
-
-//     let i = Math.floor(n / 2)
-
+//     let a = [];
+//     let i = Math.floor(n / 2);
 //     for (let index = 0; index < i; index++) {
-
-//         console.log((Math.round(Math.random() * n)));
-
+//         let result = Math.round(Math.random() * n);
+//         a.push(result);        
 //     }
-
+//     return a;
 // }
 
 // getRandomArrNumbers(9);
@@ -67,23 +62,26 @@
 
 // console.log(currentDate);
 //--------------------------------------- ЗАДАНИЕ 9 ------------------------------------------------------
-// const currentDate = new Date(); // 73 
+// const currentDate = new Date();
 
-// let newDate = currentDate;
+// currentDate.setDate(currentDate.getDate() + 73);
 
-// newDate.setDate(newDate.getDate() + 73);
-
-// console.log(newDate);
+// console.log(currentDate);
 //--------------------------------------- ЗАДАНИЕ 10 ------------------------------------------------------
-
 // const currentDate = new Date();
 
 // const options = { year: 'numeric', weekday: 'long', month: 'long', day: 'numeric' };
 
 // console.log(currentDate.toLocaleDateString('ru-RU', options).split(',').reverse().join('-это день '));
 // console.log(currentDate.toLocaleTimeString('ru-RU'));
+//--------------------------------------- ЗАДАНИЕ 10 ------------------------------------------------------
+// function date(currentDate) {
+//     currentDate = new Date();
+//     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+//     return `Дата: ${currentDate.getDate()} ${months[currentDate.getMonth()]} ${currentDate.getFullYear()} - это Среда\nВремя: ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+// }
 
-
+// console.log(date());
 //--------------------------------------- ЗАДАНИЕ 11 ------------------------------------------------------
 // function game2() {
 //     let text = "Запомни очередность слов:"
