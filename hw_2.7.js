@@ -7,10 +7,12 @@
 //--------------------------------------- ЗАДАНИЕ 2 ------------------------------------------------------
 // function searchStart(arr, str) {
 
-//     return arr.filter(el => el.toLowerCase().startsWith(str));
+//     return arr.filter(el => el.toLowerCase().startsWith(str.toLowerCase()));
 // }
 
-// console.log(searchStart([`Кошка`, `Кит`, `Комар`, `Носорог`], `ко`));
+// console.log(searchStart([`Кошка`, `Кит`, `Комар`, `Носорог`], `КО`));
+
+
 //--------------------------------------- ЗАДАНИЕ 3 ------------------------------------------------------
 
 // let number = 32.58884;
@@ -208,3 +210,25 @@
 
 // console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
 // console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+//----------------------------------------------
+
+// function alex() {
+   
+//     let newAlex = 'Алекс';
+
+//     console.log(newAlex);
+// }
+
+// alex();
+
+
+
+// const alex = () => {
+   
+//     let newAlex = 'Алекс';
+
+//     console.log(newAlex);
+// }
+
+// alex();
+
