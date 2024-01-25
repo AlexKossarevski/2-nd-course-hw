@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="top__game_pc center">
         <div class="heading_pc">
-            <h2 class="header__game_pc" >Добро пожаловать <br> на мой сайт !</h2>
-            <p class="text__game_pc" >Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и <b>приступай</b></p>
+            <h2 class="header__game_pc">Добро пожаловать <br> на мой сайт !</h2>
+            <p class="text__game_pc">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b>
+                и <b>приступай</b></p>
             <form action="#games">
-                <button class="button__game_pc">Поехали!</button> 
+                <button class="button__game_pc">Поехали!</button>
             </form>
         </div>
     </section>
@@ -24,34 +27,67 @@
         <a class="game game__pc_2" href="#game2">Игра 2</a>
         <a class="game game__pc_3" href="#game3">Игра 3</a>
     </div>
-    <section id="game1" class="seasons__game center" >
-        <div class="seasons__info" >
-            <h2 class="seasons__header" >Времена года!</h2>
-            <p class="seasons__text" >Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <button onclick="game1()" class="button__game_pc" >Играть!</button>
+    <section id="game1" class="seasons__game center">
+        <div class="seasons__info">
+            <h2 class="seasons__header">Времена года!</h2>
+            <p class="seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                времени года он относится</p>
+            <button onclick="game1()" class="button__game_pc">Играть!</button>
         </div>
         <div class="panel__seasons">
             <img class="logo__seasons" src="img/seasons_logo.svg" alt="">
         </div>
     </section>
+    <section id="game2" class="speech__game center">
+        <div class="panel__speech">
+            <img class="logo__speech" src="img/speech_logo.svg" alt="">
+        </div>
+        <div class="speech__info">
+            <h2 class="speech__header">Запомни слова</h2>
+            <p class="speech__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <button onclick="game2()" class="button__game_pc">Играть!</button>
+        </div>
+    </section>
     <script>
         function game1() {
             let num = Number(prompt('Введи число от 1 до 12!'));
-            function seasons (num) {
-                if (num <=0 || num >= 13) {
-                alert('Вы ввели неправильное число');
+            function seasons(num) {
+                if (num <= 0 || num >= 13) {
+                    alert('Вы ввели неправильное число');
                 } else if (num === 1 || num === 2 || num === 12) {
-                alert('Зима');
+                    alert('Зима');
                 } else if (num === 3 || num === 4 || num === 5) {
-                alert('Весна');
+                    alert('Весна');
                 } else if (num === 6 || num === 7 || num === 8) {
-                alert('Лето');
+                    alert('Лето');
                 } else {
-                alert('Осень')
+                    alert('Осень')
                 }
             }
             seasons(num);
         }
     </script>
+    <script>
+        function game2() {
+            let text = "Запомни очередность слов:"
+            let words = ['Яблоко', 'Груша', 'Дыня', 'Вноград', 'Персик', 'Апелсин', 'Мандарин',];
+            words = words.sort(() => Math.random() - 0.5);
+            alert(text + ' ' + `${words}`);
+            let userAnswer1 = String(prompt(`Как назывался первый фрукт?`));
+            let userAnswer2 = String(prompt(`Как назывался последний фрукт?`));
+            function userAnswer(userAnswer1, userAnswer2) {
+                if (userAnswer1 === words[0] && userAnswer2 === words[6]) {
+                    alert('Правильно, оба элемента!');
+                } else if (userAnswer1 === words[0] || userAnswer2 === words[6]) {
+                    alert('Почти угадали!');
+                } else {
+                    alert('Ответ не верный');
+                }
+            }
+            userAnswer(userAnswer1, userAnswer2);
+        }   
+    </script>
 </body>
+
 </html>
