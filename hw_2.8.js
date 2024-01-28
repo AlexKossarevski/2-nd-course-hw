@@ -1,3 +1,99 @@
+//=============================================== 1 Task =============================================
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+];
+
+
+console.log(people.sort(function sortAge(a, b) {
+    if (a.age > b.age) {
+        return 1;
+    }
+    if (a.age < b.age) {
+        return -1;
+    }
+    return 0;
+}));
+
+
+
+
+// console.log(people.sort((a, b) => a.age - b.age));
+//=============================================== 2 Task =============================================
+
+// function isPositive(number) {
+//     return number > 0;
+// }
+
+// function filter(arr, ruleFunction) {
+//     const output = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (ruleFunction(arr[i])) {
+//             output.push(arr[i]);
+//         }
+//     }
+//     return output;
+// }
+// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+//=============================================== 3 Task =============================================
+// const date = () => {
+//     let currentDate = new Date();
+//     let interval = setInterval(() => console.log(currentDate), 3000);
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         console.log(date('30 секунд прошло!'));
+
+//     }, 30000);
+// }
+
+// const date = () => {
+//     let currentDate = new Date();
+//     let interval = setInterval(() => console.log(currentDate), 3000);
+//     console.log(currentDate);
+// }
+
+// let currentDate = new Date();
+// let interval = setInterval(() => console.log(currentDate), 3000);
+
+//=============================================== 4 Task =============================================
+
+
+//=============================================== 5 Task =============================================
+
+
+//--------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------//
+
+// people.sort(function (a, b) {
+//     if (a.age > b.age) {
+//         return 1;
+//     }
+//     if (a.age < b.age) {
+//         return -1;
+//     }
+
+//     return 0;
+// });
+
+// console.log(people);
+
+
+// const people = [
+//     { name: 'Глеб', age: 29 },
+//     { name: 'Анна', age: 17 },
+//     { name: 'Олег', age: 7 },
+//     { name: 'Оксана', age: 47 }
+// ];
+
+// people.sort((person2, person1) => person1.age - person2.age);
+
+// console.log(people);
+
+
+
 //------------------------------------------------------------------------//
 
 // const fibonacci = [1, 1, 2, 3, 5, 8];
@@ -96,4 +192,108 @@
 // }
 
 // each(["Глеб", "Олег", "Татьяна", "Платон"], log);
+// //------------------------------------------------------------------------//
+// function showAd() {
+// 	alert('Купи наш лучший в мире продукт, только сейчас со скидкой 90%');
+// }
+
+// setTimeout(showAd, 1000 * 60);
 //------------------------------------------------------------------------//
+// let timerId = setTimeout(() => console.log("ничего не происходит"), 1000);
+// console.log(timerId); // идентификатор таймера
+
+// clearTimeout(timerId);
+//------------------------------------------------------------------------//
+// // повторить с интервалом 2 секунды
+// let timerId = setInterval(() => alert('tick'), 2000);
+//------------------------------------------------------------------------//
+// повторить с интервалом 2 секунды
+// let timerId = setInterval(() => alert('tick'), 2000);
+
+// // остановить вывод через 5 секунд
+// setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+//------------------------------------------------------------------------//
+/** вместо:
+let timerId = setInterval(() => alert('tick'), 2000);
+*/
+
+// let timerId = setTimeout(function tick() {
+//     alert('tick');
+//     timerId = setTimeout(tick, 2000); // (*)
+//   }, 2000);
+//------------------------------------------------------------------------//
+// let delay = 1000;
+
+// let timerId = setTimeout(function request() {
+// //   ...отправить запрос...
+
+//   if ('ошибка запроса из - за перегрузки сервера') {
+//     // увеличить интервал для следующего запроса
+//     delay *= 2;
+// }
+
+// timerId = setTimeout(request, delay);
+
+// }, delay);
+//------------------------------------------------------------------------//
+// const timer = (deadline) => {
+//     setInterval(() => {
+//         console.log(deadline);
+//     }, 1000);
+// };
+
+// // вызовем функцию
+// timer(3);
+//------------------------------------------------------------------------//
+// const timer = (deadline) => {
+//     const interval = setInterval(() => {
+//         console.log(deadline);
+//     }, 1000);
+
+
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         console.log('Время истекло!')
+//     }, deadline * 1000)
+// };
+
+// timer(3);
+//------------------------------------------------------------------------//
+// const timer = (deadline) => {
+//     let time = deadline;
+//     console.log(time);
+//     const interval = setInterval(() => {
+//         time -= 1;
+//         console.log(time);
+//     }, 1000);
+
+
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         console.log('Время истекло!')
+//     }, deadline * 1000)
+// };
+
+// timer(3);
+//------------------------------------------------------------------------// *******************
+// const timer = (deadline) => {
+//     if (isNaN(+deadline)) { // + − приводим значение к number, если это NaN,
+//         console.log('Передано некорректное число'); // выводим сообщение
+//         return; // выходим из функции
+//     }
+
+//     let time = deadline;
+//     const interval = setInterval(() => {
+//         time -= 1;
+//         console.log(time);
+//     }, 1000);
+
+//     setTimeout(() => {
+//         clearInterval(interval);
+//         console.log('Время истекло!')
+//     }, deadline * 1000)
+// };
+
+// const deadline = prompt('На сколько секунд вы хотите поставить таймер?');
+// timer(deadline);
+
